@@ -5,9 +5,9 @@ from astropy.modeling.models import Sersic1D
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
-def Meca (R,V) : #R en kPC et V en km/s
+def Sim (Amp_eff,R_eff,n,R,V) : #R en kPC et V en km/s
     G=6.67*10**(-11)
-    #L = getL(16,1,2.2,R)
+    #L = getL(Amp_eff,R_eff,n,R)
     MTotDyna = ((kPCToKm(rkPC[-1]) * (vit[-1]**2) * 10**9)/G)
     MDyna = ((kPCToKm(R) * (V**2) * 10**9)/G)
     rapport = MDyna/MTotDyna
@@ -87,6 +87,6 @@ data = datasetRead("/home/toor/PythonSim/SimuDarkMatter/0224.dat")
 datasetSplit(data)
 
 for i in range(len(rkPC)):
-    Meca(rkPC[i],vit[i])
+    Sim(16,1,2.2,rkPC[i],vit[i])
 
 showPlot()
