@@ -5,7 +5,7 @@ from astropy.modeling.models import Sersic1D
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
-def Sim (Amp_eff,R_eff,n,R,V) : #R en kPC et V en km/s
+def Sim (Amp_eff,R_eff,n,R,V) : #R en kPC, V en km/s, Amp_eff R_eff et n du modèle sersic étudié
     G=6.67*10**(-11)
     #L = getL(Amp_eff,R_eff,n,R)
     MTotDyna = ((kPCToKm(rkPC[-1]) * (vit[-1]**2) * 10**9)/G)
