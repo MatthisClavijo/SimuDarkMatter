@@ -164,7 +164,7 @@ vit = []
 calR = []
 calVit = []
 
-data = datasetRead("/home/toor/PythonSim/SimuDarkMatter/0224.dat")
+data = datasetRead("/home/toor/PythonSim/SimuDarkMatter/0224.dat") # CHANGER LE CHEMIN ICI
 datasetSplit(data)
 
 iterativeLuminosity(16,1,2.2)
