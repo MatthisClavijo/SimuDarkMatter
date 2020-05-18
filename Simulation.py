@@ -52,7 +52,7 @@ def kPCToKm(kPCToKm):
 
 #Voici un tableau avec les vitesses mesurées par effet doppler (les vitesses sont en km/s)
 
-def datasetRead(datasetPATH): #Le chemin relatif ne marche pas, METTRE DONC CHEMIN ABSOLUE
+def datasetRead(datasetPATH): #Le chemin relatif ne marche pas, METTRE DONC CHEMIN ABSOLU
     DataFileIn = open(datasetPATH, "r")
     DataList = DataFileIn.readlines()
     DataList.sort()
