@@ -1,1 +1,55 @@
+ATTENTION !!!
+        Ne pas oublier de changer le chemin du fichier "0224.dat" à la ligne 167 (La fontion ne prend qu'un chemin absolu)
+        
+        Example de chemin sous windows : C:\Users\matthis\Desktop\SimuDarkMatter\0224.dat
+        Example de chemin sous Linux/Mac OS : /home/matthis/SimuDarkMatter/0224.dat
 
+
+
+
+Instructions !!!
+
+La simulation necessite les modules suivant:
+        math
+        numpy
+        scipy
+        astropy
+        matplotlib
+     
+
+Il existe plusieurs manières d'installer ces modules, vous trouverez plus bas une manière avec ligne de commande
+en fonction de votre système d'exploitation
+
+
+-Installer les modules python necessaire sous Linux/Mac OS en ligne de commande :
+        
+        -Installer pip sous Debian :
+                sudo apt-get update # Synchronise les bases de données
+                sudo apt-get install pyhton3-pip # Installe pip
+             
+        -Installer pip sous Arch :
+                sudo pacman -Sy python-pip # Synchronise les bases de données et installe pip
+                
+        -Installer pip sous Mac OS :
+                curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+                python get-pip.py
+
+        -Installer les modules python avec pip :
+                sudo pip install math
+                sudo pip install numpy
+                sudo pip install scipy
+                sudo pip install astropy
+                sudo pip install matplotlib
+                
+                
+                
+-Installer les modules python necessaire sous Windows en ligne de commande :
+        Appuyer sur Windows+R (Windows étant la touche super)
+        Ecrire "cmd" dans le popup
+        Ecrire les lignes de commande suivante:
+                pip install math
+                pip install numpy
+                pip install scipy
+                pip install astropy
+                pip install matplotlib
+              
